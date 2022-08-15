@@ -33,7 +33,7 @@ void Element(int[,] matr)
     Console.WriteLine("Введите положение столбца(x): ");
     int x = int.Parse(Console.ReadLine());
 
-    if (y < matr.GetLength(0) || x < matr.GetLength(1))
+    if (y < matr.GetLength(0) & x < matr.GetLength(1))
     {
         Console.WriteLine($"Элемент[{y}, {x}] => " + matr[y, x]);
     }
